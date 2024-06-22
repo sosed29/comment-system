@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System of comment</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="navigation"></div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content-left_main">
+            </div>
+            <div class="content-right_main">
+                <div class="content-right_main-centr">
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-item"></div>
+                    <div class="content-right_main-centr-bigitem"></div>
+                </div>
+                <div class="strok">
+                    <img src="./svg/strok.svg" alt="strok"> 
+                </div>
+                <div class="content-bottom">
+                    <div class="text-content">Комментарии <span class="namber">(80)</span></div>
+                    <div class="other-elements">
+                        <div class="dropdown">
+                            <button class="dropdown-button">По количеству оценок</button>
+                            <div class="dropdown-content">
+                                <button class="dropdown-item" data-value="По дате">По дате</button>
+                                <button class="dropdown-item" data-value="По количеству оценок">По количеству
+                                    оценок</button>
+                                <button class="dropdown-item" data-value="По актуальности">По актуальности</button>
+                                <button class="dropdown-item" data-value="По количеству ответов">По количеству
+                                    ответов</button>
+                            </div>
+                        </div>
+                        <div class="triangle"><img src="./svg/Arrow 1.svg" alt="Arrow"></div>
+                        <span class="favourites-text">
+                            <span class="favourites-label">Избранное</span>
+                            <div class="favourites-images">
+                                <img src="./svg/favourites.svg" alt="favourites">
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="Maks">
+                    <div class="Maks-fot">
+                        <img src="./svg/Mask group.svg" alt="Mask group"> 
+                    </div>
+                    <div class="Maks-block">
+                        <label for="about" class="style-text position-Maks">Максим Авдеенко</label>
+                        <span class="Maks-text">Макс. 1000 символов</span><br>
+                        <textarea id="about" class="text-style" placeholder="Введите текст сообщения..."></textarea>
+                        <span class="Maks-text"></span>
+                    </div>
+                    <button type="submit" class="button-style" id="comment-send">Отправить</button>
+                </div>
+                <div class="result">
+                    <div class="result-comment" id="result-comment"></div>
+                </div>
+    </main>
+</body>
+<script type="module" src="./index.js"></script>
+
+</html>
