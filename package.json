@@ -11,5 +11,9 @@
   "devDependencies": {
     "typescript": "^5.4.5"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.7.2"
+  }
 }

@@ -318,7 +318,7 @@ textarea {
     font-weight: 400;
     line-height: 21.78px;
     text-align: left;
-    margin-left: 70px;
+
 
 }
 
@@ -379,20 +379,12 @@ textarea {
     border: none;
 }
 
-.counter-container {
+.reply-button .counter-container {
     display: flex;
     align-items: center;
 
 }
 
-.images-DJ {
-    width: 61px;
-    height: 61px;
-    margin: 0px 30px 0px 0px;
-    border-radius: 50px;
-    background-image: url(img/DJ.png);
-    margin-left: 105px;
-}
 
 .neWcomment-details {
     width: 920px;
@@ -434,7 +426,7 @@ textarea {
 }
 
 .reply-text {
-    margin-left: 100px;
+
     border: none;
     outline: none;
     box-shadow: none;
@@ -442,8 +434,7 @@ textarea {
     font-size: 18px;
     font-weight: 400;
     line-height: 21.78px;
-    text-align: left;
-
+    height: auto
 }
 
 .neWcomment-details {
@@ -495,6 +486,7 @@ textarea {
     border-radius: 50px;
     background-image: url(img/Dyhnila.png);
     margin-left: 105px;
+
 }
 
 
@@ -527,6 +519,119 @@ textarea {
     width: 205px;
     margin-top: 41px;
 }
+
+.button-answer {
+    background-color: #13e50b;
+    width: max-content;
+    padding: 5px 10px;
+    margin-left: 23px;
+    cursor: pointer;
+}
+
+.comment-parent_image {
+    width: 61px;
+    height: 61px;
+    margin: 0px 30px 0px 0px;
+    border-radius: 50px;
+    background-image: url(img/Alex.png);
+
+
+}
+
+.comment-parent {
+    display: flex;
+    width: max-content;
+}
+
+.comment-parent__info-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #122AC0;
+}
+
+.comment-parent__info-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #918d8d;
+    margin-left: 20px;
+}
+
+.comment-parent__info-events {
+    display: flex;
+}
+
+.comment-answers_image {
+    width: 61px;
+    height: 61px;
+    border-radius: 50px;
+
+
+}
+
+.comment-parent_image img,
+.comment-answers_image img {
+    border-radius: 50%;
+}
+
+.comment-answers_item {
+    display: flex;
+    padding: 10px 0px;
+    margin-left: 100px;
+    margin-top: 28px;
+}
+
+.comment-answers__info-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #122AC0;
+    margin-left: 20px;
+}
+
+.comment-answers__info-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #918d8d;
+    margin-left: 20px;
+}
+
+.comment-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-answers_image {
+    display: flex;
+}
+
+.comment-answers__item {
+    display: flex;
+}
+
+.comment-parent__info-comment {
+    padding: 20px 20px 20px 20px;
+    width: 1000px;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 21.78px;
+
+}
+
+.comment-answers__info-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -640,55 +745,42 @@ textarea {
         z-index: 1000;
     }
 
-    .comment-text {
-        width: 340px;
-        margin-left: 10px;
-        margin-top: 40px;
-    }
-
     .counter-container {
         flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
     }
 
-    .comment-details {
-        margin-top: 20px;
-    }
-
-    .button-container {
-        margin-top: 0;
-    }
-
-    .reply-button {
-        margin-left: 0;
-        width: 300px;
-    }
-
-    .images-DJ {
-        margin-top: 75px;
-        margin-left: 0;
-    }
-
-    .reply-text {
-        margin-left: 0;
-    }
-
-    .images-Dyhnila {
+    .comment-answers_item {
         margin-left: 0px;
-        margin-top: 54px;
-    }
-
-    .neWcomment-name {
-        margin-top: 20px;
-    }
-
-    .flex-container {
-        margin-left: 0;
-    }
-
-    .over-limit-message {
-        left: 111px;
-        margin-top: 78px;
     }
 
 
+
+    .comment-answers__info-header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .comment-answers__info-name {
+        order: 1;
+
+    }
+
+
+    .comment-answers__info-time {
+        order: 2;
+
+    }
+
+    .mobile {
+        order: 3;
+        width: 100%;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .comment-parent__info-comment {
+        width: 360px;
+    }
 }
